@@ -1,0 +1,15 @@
+Manufacturer: Affymetrix
+Platform: Human Genome U133
+Molecular Target: RNA
+Platform Description: 44,000 probeset 2-chip set.
+
+Raw data: cel files
+Normalization method: GCRMA
+Cell lines: NCI-60
+
+Description of Normalization Method: GCRMA
+
+The intensities of the probes in each probeset were combined and normalized using GCRMA (GC-Robust Multi-array Average). 
+This was done using the "gcrma" package in R with default options. The GCRMA procedure replicates the RMA 
+(Robust Multi-array Average) method with the additional step of estimating cross-hybridization using the GC content of the probe. 
+The GCRMA function also does logarithm to base 2, so no further logarithm was taken.
